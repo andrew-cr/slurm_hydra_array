@@ -1,0 +1,6 @@
+# @package _global_
+hydra:
+  sweep:
+    dir: "/data/localhost/not-backed-up/${env:USER}/logs/misc/${now:%Y-%m-%d_%H-%M-%S}_${env:SLURM_ARRAY_TASK_ID}_${name}_sweep"
+  run:
+    dir: "/data/localhost/not-backed-up/${env:USER}/logs/misc/${now:%Y-%m-%d_%H-%M-%S}_${env:SLURM_ARRAY_TASK_ID}_${name}_run"
